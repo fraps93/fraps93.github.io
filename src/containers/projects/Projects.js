@@ -1,74 +1,104 @@
-import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
+import React, {useContext} from "react";
+import {Fade} from "react-reveal";
 import "./Project.scss";
-import Button from "../../components/button/Button";
-import {openSource, socialMediaLinks} from "../../portfolio";
+import {openSource} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import Loading from "../../containers/loading/Loading";
+
 export default function Projects() {
-  const GithubRepoCard = lazy(() =>
-    import("../../components/githubRepoCard/GithubRepoCard")
-  );
-  const FailedLoading = () => null;
-  const renderLoader = () => <Loading />;
-  const [repo, setrepo] = useState([]);
-  // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
 
-  useEffect(() => {
-    const getRepoData = () => {
-      fetch("/profile.json")
-        .then(result => {
-          if (result.ok) {
-            return result.json();
-          }
-          throw result;
-        })
-        .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
-        })
-        .catch(function (error) {
-          console.error(
-            `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
-          );
-          setrepoFunction("Error");
-        });
-    };
-    getRepoData();
-  }, []);
+  function openUrlInNewTab(url) {
+    if (!url) return;
+    const win = window.open(url, "_blank", "noopener,noreferrer");
+    win && win.focus();
+  }
 
-  function setrepoFunction(array) {
-    setrepo(array);
+  if (!openSource.display) {
+    return null;
   }
-  if (
-    !(typeof repo === "string" || repo instanceof String) &&
-    openSource.display
-  ) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
-          <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
-              if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
-                );
+
+  return (
+    <Fade bottom duration={1000} distance="20px">
+      <div className="main" id="opensource">
+        <div>
+          <h1 className="skills-heading">{openSource.title}</h1>
+          {openSource.subtitle && (
+            <p
+              className={
+                isDark
+                  ? "dark-mode project-subtitle"
+                  : "subTitle project-subtitle"
               }
-              return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
-              );
-            })}
+            >
+              {openSource.subtitle}
+            </p>
+          )}
+
+          <div className="opensource-grid">
+            {openSource.projects.map((project, i) => (
+              <div
+                key={i}
+                className={
+                  isDark
+                    ? "dark-mode project-card project-card-dark"
+                    : "project-card project-card-light"
+                }
+                onClick={() => openUrlInNewTab(project.url)}
+                style={{cursor: "pointer"}}
+              >
+                <div className="project-image">
+                  <i
+                    className={project.icon}
+                    style={{
+                      fontSize: 56,
+                      color: project.languageColor
+                    }}
+                  ></i>
+                </div>
+                <div className="project-detail">
+                  <h5
+                    className={
+                      isDark ? "dark-mode card-title" : "card-title"
+                    }
+                  >
+                    {project.name}
+                  </h5>
+                  <p
+                    className={
+                      isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                    }
+                  >
+                    {project.description}
+                  </p>
+                  <div className="project-card-footer">
+                    {project.language && (
+                      <span
+                        className={
+                          isDark ? "dark-mode project-tag" : "project-tag"
+                        }
+                      >
+                        {project.language}
+                      </span>
+                    )}
+                    <span
+                      className={
+                        isDark ? "dark-mode project-tag" : "project-tag"
+                      }
+                      onClick={e => {
+                        e.stopPropagation();
+                        openUrlInNewTab(project.url);
+                      }}
+                    >
+                      View on GitHub
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          <Button
-            text={"More Projects"}
-            className="project-button"
-            href={socialMediaLinks.github}
-            newTab={true}
-          />
+
         </div>
-      </Suspense>
-    );
-  } else {
-    return <FailedLoading />;
-  }
+      </div>
+    </Fade>
+  );
 }

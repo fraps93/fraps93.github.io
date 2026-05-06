@@ -8,55 +8,55 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Fabrizio Bonavita",
+  title: "Hi, I'm Fabrizio",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Senior AI Engineer & Technical Lead with 7+ years of experience building production-grade Generative AI, RAG, and multi-agent systems for enterprise. M.Sc. in Communications Engineering (110/110 cum laude, Sapienza University of Rome). Specialized in Python, LLMs, LangChain, and cloud-native ML on GCP, AWS and Azure."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  displayGreeting: true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/fraps93",
+  linkedin: "https://www.linkedin.com/in/fabrizio-bonavita-ba9194110/",
+  gmail: "fabriziobonavita93@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true
 };
 
 // Skills Section
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "SENIOR AI ENGINEER FOCUSED ON LLMs, RAG, MULTI-AGENT ORCHESTRATION AND ENTERPRISE-GRADE NLP",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Design and ship production-grade Retrieval-Augmented Generation (RAG / GraphRAG) pipelines with hybrid retrieval, supervised rerankers and parent–child chunking"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Architect multi-agent LLM systems for regulatory compliance, process governance and operational-guideline generation"
+    ),
+    emoji(
+      "⚡ Build cloud-native ML services on GCP, AWS (SageMaker, Step Functions) and Azure with Docker, Kubernetes and CI/CD"
+    ),
+    emoji(
+      "⚡ Lead end-to-end NLP solutions: classification, OCR, NER, semantic search, embeddings and vector databases"
     )
   ],
 
@@ -65,84 +65,99 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "tensorflow",
+      fontAwesomeClassname: "fas fa-project-diagram"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "pytorch",
+      fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "ai / llm",
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "nlp",
+      fontAwesomeClassname: "fas fa-comments"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "machine learning",
+      fontAwesomeClassname: "fas fa-brain"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "huggingface",
+      fontAwesomeClassname: "fas fa-smile"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "langchain",
+      fontAwesomeClassname: "fas fa-link"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra"
     },
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "google-cloud",
+      fontAwesomeClassname: "fab fa-google"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "microsoft-azure",
+      fontAwesomeClassname: "fab fa-microsoft"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "databases",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "agents",
+      fontAwesomeClassname: "fas fa-users-cog"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Sapienza University of Rome",
+      logo: require("./assets/images/sapienza.jpeg"),
+      subHeader: "Master of Science in Communications Engineering",
+      duration: "September 2016 - July 2019",
+      desc: "Graduated 110/110 cum laude. Specialization in Machine Learning, Deep Learning, NLP, Data Science, IoT and Multimedia.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Master Thesis: «Machine Learning techniques with a Granular Computing approach for text categorization». Supervisors Prof. Antonello Rizzi and Enrico De Santis",
+        "Winner of the «Wanted the best» scholarship (Oct 2016)"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Tor Vergata University of Rome",
+      logo: require("./assets/images/tv.png"),
+      subHeader:
+        "Bachelor of Science in Media and Technology Sciences (Applied Mathematics)",
+      duration: "September 2013 - July 2016",
+      desc: "Graduated 110/110 cum laude. Topics: Mathematical Analysis, Fourier Analysis, Acoustics.",
+      descBullets: [
+        "Winner of the «Worthy Students» scholarship for 3 consecutive years (2013–2016)"
+      ]
     }
   ]
 };
@@ -150,53 +165,119 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
+  
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Natural Language Processing",
+      progressPercentage: "95%"
     },
     {
-      Stack: "Backend",
+      Stack: "Semantic Search | Embeddings | RAG",
+      progressPercentage: "90%"
+    },
+
+  {
+      Stack: "LLM | Multi-Agent Systems",
+      progressPercentage: "88%"
+    },
+    
+    {
+      Stack: "Python | BE Engineering",
+      progressPercentage: "85%"
+    },
+    
+    {
+      Stack: "Cloud & MLOps (GCP / AWS / Azure)",
       progressPercentage: "70%"
     },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
+   
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "AI Tech Lead",
+      company: "DOS Mind",
+      companylogo: require("./assets/images/dosmind.jpg"),
+      date: "April 2024 – Present",
+      desc: "Partner of the company and technical lead of the DOS Mind AI spinoff. I drive R&D, architecture and delivery of LLM-based products for enterprise clients.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Knowledge Hub: led research and architecture of a low-cost structured retrieval system combining vector-space geometry with a semantic correlation graph",
+        "ContentLab: delivered a production-grade RAG pipeline with BM25 + semantic retrieval, parent-child chunking and supervised reranker (LLM-as-a-judge)",
+        "Advanced RAG systems for PA regulatory circulars: correlate regulations and circulars to enterprise business processes to assess compliance and impact"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Deep Learning & NLP Coach",
+      company: "ProfessionAI",
+      companylogo: require("./assets/images/professionai_logo.png"),
+      date: "October 2022 – Present",
+      desc: "Coach for one of the leading Italian e-learning platforms on AI, ML and Data Science. Teach theoretical and practical Deep Learning / NLP modules and mentor enrolled students.",
+      descBullets: [
+        "Teach Recurrent Neural Networks (Vanilla RNN, LSTM, GRU)",
+        "Teach Transformers architecture and applications",
+        "Review and grade student assessments on a multilabel NLP case study: toxic language detection on social media with strongly imbalanced datasets"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Senior AI Engineer",
+      company: "UniCredit",
+      companylogo: require("./assets/images/unicredit.png"),
+      bannerColor: "#E2001A",
+      date: "July 2023 – April 2024",
+      desc: "Senior ML Engineer in the AI Factory team designing Generative AI solutions for the bank.",
+      descBullets: [
+        "Audit Report Generation: GenAI solution helping auditors produce comprehensive audit reports",
+        "OneMarket VA: virtual assistant integrated in the OneMarket app, powered by a RAG pipeline to surface information on internal investment products",
+        "Listener Engine: summarization pipeline turning surveys and observations into executive-ready reports for top management"
+      ]
+    },
+    {
+      role: "Machine Learning Engineer",
+      company: "Enel Group",
+      companylogo: require("./assets/images/enel.png"),
+      logoStyle: {
+        padding: "1.2rem",
+        objectFit: "contain",
+        background: "#fff",
+        boxSizing: "border-box"
+      },
+      date: "December 2021 – July 2023",
+      desc: "ML Engineer in the NLP team of the Global Data Hub, building production NLP pipelines on AWS.",
+      descBullets: [
+        "ENGINE: documentary framework for envelope text classification. Preprocessing, page classification, OCR, ID-card recognition, NER",
+        "GDPR: documentary framework to detect confidentiality and privacy content across company documents",
+        "Semantic search over corporate contracts using a multilingual embedding model"
+      ]
+    },
+    
+    {
+      role: "Machine Learning Engineer",
+      company: "Almawave",
+      companylogo: require("./assets/images/almawave.png"),
+      date: "October 2020 – December 2021",
+      desc: "Solution Architect for the conversational AI product Iride. End-to-end chatbot delivery for public-sector clients: NLP pipelines, dataset creation, feature extraction and model training (Python, Docker, Transformers, BERT).",
+      descBullets: [
+        "Built an end-to-end chatbot to help citizens locate EV charging stations across the city of Florence",
+        "Designed and maintained multiple chatbots for INPS"
+      ]
+    },
+    {
+      role: "Data Scientist",
+      company: "Reply",
+      companylogo: require("./assets/images/replyLogo.png"),
+      date: "May 2019 – October 2020",
+      desc: "Consulting on data science and software engineering projects.",
+      descBullets: [
+        "Document classification for AdER",
+        "Laws segmentation and Named Entity Recognition on juridical documents"
+      ]
     }
   ]
 };
@@ -205,185 +286,187 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false",
+  display: true,
+  title: "Github Projects",
+  subtitle:
+    "SELECTED OPEN-SOURCE WORK ON RAG, MULTI-AGENT SYSTEMS AND APPLIED LLMs",
+  githubUrl: socialMediaLinks.github,
+  projects: [
+    {
+      name: "Agentic Debate Arena",
+      description:
+        "Multi-agent debate simulator powered by LLMs, with judge, scoring and tool-use. A small playground to explore how specialized agents argue, evaluate and converge on answers.",
+      url: "https://github.com/fraps93/agentic-debate-arena",
+      icon: "fas fa-balance-scale",
+      language: "Python",
+      languageColor: "#3572A5"
+    },
+    {
+      name: "Legal RAG Pipeline",
+      description:
+        "End-to-end RAG pipeline for legal and compliance documents: parent-child chunking, hybrid search (FAISS + BM25) and LLM reranking. Runs fully local with Ollama — no API keys.",
+      url: "https://github.com/fraps93/precise-rag",
+      icon: "fas fa-book-reader",
+      language: "Jupyter Notebook",
+      languageColor: "#DA5B0B"
+    },
+    {
+      name: "LangExtract Tutorial",
+      description:
+        "Step-by-step tutorial on extracting structured compliance data from legal and regulatory documents using LangExtract and a local LLM (Gemma via Ollama).",
+      url: "https://github.com/fraps93/langextract-legal-tutorial",
+      icon: "fas fa-file-contract",
+      language: "Jupyter Notebook",
+      languageColor: "#6f42c1"
+    },
+    {
+      name: "Hexagonal FastAPI",
+      description:
+        "Reference backend architecture in Python showcasing Ports & Adapters, a declarative dependency-injection container and FastAPI + Pydantic",
+      url: "https://github.com/fraps93/hexagonal-fastapi",
+      icon: "fas fa-layer-group",
+      language: "Python",
+      languageColor: "#009485"
+    }
+  ]
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Flagship Projects",
+  subtitle:
+    "ENTERPRISE-GRADE GENERATIVE AI, RAG AND MULTI-AGENT SYSTEMS I HAVE LED OR BUILT",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      image: require("./assets/images/dosmind.jpg"),
+      projectName: "Knowledge Hub",
+      projectDesc:
+        "Low-cost structured retrieval combining vector-space geometry with a semantic correlation graph to surface cross-silo enterprise knowledge — without LLM involvement at ingestion time. [Python, Embeddings, Vector DB, GraphRAG]",
+      footerLink: []
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
+      image: require("./assets/images/dosmind.jpg"), // TODO: replace with MEF logo
+      projectName: "ContentLab",
+      projectDesc:
+        "Production-grade RAG pipeline for the MEF combining BM25 and neural retrieval, parent-child chunking and a supervised reranker for high-precision answers. Automated generation of operational guidelines via advanced prompt engineering. [Python, LangChain, Anthropic, GCP, BM25, Supervised Reranker]",
+      footerLink: []
+    },
+   
+    
+    {
+      image: require("./assets/images/unicredit.png"),
+      projectName: "OneMarket Virtual Assistant",
+      projectDesc:
+        "Generative-AI virtual assistant integrated into the OneMarket banking application to help customers retrieve information about the bank's internal investment products. [Python, LLM, Prompt Engineering, Azure, RAG, LangChain]",
+      footerLink: []
+    },
+   
+    {
+      image: require("./assets/images/unicredit.png"),
+      projectName: "Audit Report Generation",
+      projectDesc:
+        "GenAI solution that helps auditors of the AI Factory team produce comprehensive audit reports automatically from raw findings, controls and evidence. [Python, LLM, Prompt Engineering, Azure, LangChain]",
+      footerLink: []
+    },
+
+    {
+      image: require("./assets/images/enel.png"),
+      imageStyle: {padding: "1.5rem"},
+      projectName: "ENGINE",
+      projectDesc:
+        "Documentary framework for envelope text classification at industrial scale: page classification (text + image), OCR, ID-card / document recognition, NER. Built and deployed end-to-end on AWS. [Python, Docker, AWS SageMaker, AWS Step Functions]",
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/enel.png"),
+      imageStyle: {padding: "1.5rem"},
+      projectName: "Semantic Search on Contracts",
+      projectDesc:
+        "Semantic search across the Group's contracts via a multilingual embedding model exposed through Elasticsearch — fast retrieval across heterogeneous legal documents. [Python, Kubernetes, Word Embeddings, Elasticsearch]",
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/enel.png"),
+      imageStyle: {padding: "1.5rem"},
+      projectName: "GDPR Framework",
+      projectDesc:
+        "Documentary framework to detect confidentiality and privacy content across company documents: preprocessing, page classification (text + image), OCR, ID-card recognition, NER. [Python, Docker, AWS SageMaker, AWS Step Functions]",
+      footerLink: []
+    },
+ 
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements & Certifications"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Academic honors and industry certifications obtained over the years",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Hugging Face AI Agents Course",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+        "Certificate of completion issued by Hugging Face (2025). Hands-on course on building, deploying and orchestrating AI agents with LLMs, tools and frameworks like smolagents, LangGraph and LlamaIndex.",
+      image: require("./assets/images/Hugging_Face_Logo_1.png"),
+      imageAlt: "Hugging Face AI Agents Course",
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
+      title: "TensorFlow: Advanced Techniques",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Specialization issued by DeepLearning.ai (July 2022). Credential ID: TCSD55T3DXH9",
+      image: require("./assets/images/dl.png"),
+      imageAlt: "TensorFlow Specialization",
+      footerLink: []
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
+      title: "Applied Data Science with Python Specialization",
+      subtitle:
+        "University of Michigan via Coursera (December 2020). Credential ID: 8TE9TVEXP339",
+      image: require("./assets/images/michigan.png"),
+      imageAlt: "Applied Data Science",
+      footerLink: []
+    },
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+      title: "Natural Language Processing Specialization",
+      subtitle:
+        "DeepLearning.ai (October 2020). Credential ID: 5GRA7UVEBW44",
+      image: require("./assets/images/dl.png"),
+      imageAlt: "NLP Specialization",
+      footerLink: []
+    },
+    {
+      title: "«Wanted the best» Scholarship",
+      subtitle:
+        "Awarded by Sapienza University of Rome (October 2016).",
+      image: require("./assets/images/sapienza.jpeg"),
+      imageAlt: "Sapienza Scholarship",
+      footerLink: []
+    },
+    {
+      title: "«Worthy Students» Scholarship",
+      subtitle:
+        "Awarded by Tor Vergata University of Rome for 3 consecutive academic years (2013–2016) for academic merit.",
+      image: require("./assets/images/tv.png"),
+      imageAlt: "Tor Vergata University Logo",
+      footerLink: []
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Want to discuss a Generative AI / NLP project, an architecture review or a collaboration? My inbox is open.",
+  email_address: "fabriziobonavita93@gmail.com"
 };
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
-};
-
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -397,11 +480,5 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable,
-  resumeSection
+  contactInfo
 };
