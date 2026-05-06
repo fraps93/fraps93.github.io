@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "colorthief": "^2.3.0",
     "lottie-react": "^2.4.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
