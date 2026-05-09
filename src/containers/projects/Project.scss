@@ -1,18 +1,24 @@
 .opensource-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
   margin: 1.5rem 0 0.5rem;
   align-items: stretch;
 }
 
 @media (max-width: 1280px) {
   .opensource-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .opensource-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 760px) {
   .opensource-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

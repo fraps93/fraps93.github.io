@@ -305,7 +305,7 @@ const openSource = {
     {
       name: "Legal RAG Pipeline",
       description:
-        "End-to-end RAG pipeline for legal and compliance documents: parent-child chunking, hybrid search (FAISS + BM25) and LLM reranking. Runs fully local with Ollama — no API keys.",
+        "End-to-end RAG pipeline for legal and compliance documents: parent-child chunking, hybrid search (FAISS + BM25) and LLM reranking. Runs fully local with Ollama, no API keys.",
       url: "https://github.com/fraps93/precise-rag",
       icon: "fas fa-book-reader",
       language: "Jupyter Notebook",
@@ -328,6 +328,15 @@ const openSource = {
       icon: "fas fa-layer-group",
       language: "Python",
       languageColor: "#009485"
+    },
+    {
+      name: "LLM Observatory",
+      description:
+        "Two-notebook tutorial on LLM observability and offline evaluation: multi-backend OpenTelemetry tracing (Phoenix, Langfuse, Opik) and side-by-side eval frameworks on a local Ollama RAG.",
+      url: "https://github.com/fraps93/llm-observatory",
+      icon: "fas fa-binoculars",
+      language: "Jupyter Notebook",
+      languageColor: "#DA5B0B"
     }
   ]
 };
@@ -343,7 +352,7 @@ const bigProjects = {
       image: require("./assets/images/dosmind.jpg"),
       projectName: "Knowledge Hub",
       projectDesc:
-        "Low-cost structured retrieval combining vector-space geometry with a semantic correlation graph to surface cross-silo enterprise knowledge — without LLM involvement at ingestion time. [Python, Embeddings, Vector DB, GraphRAG]",
+        "Low-cost structured retrieval combining vector-space geometry with a semantic correlation graph to surface cross-silo enterprise knowledge, without LLM involvement at ingestion time. [Python, Embeddings, Vector DB, GraphRAG]",
       footerLink: []
     },
     {
@@ -384,7 +393,7 @@ const bigProjects = {
       imageStyle: {padding: "1.5rem"},
       projectName: "Semantic Search on Contracts",
       projectDesc:
-        "Semantic search across the Group's contracts via a multilingual embedding model exposed through Elasticsearch — fast retrieval across heterogeneous legal documents. [Python, Kubernetes, Word Embeddings, Elasticsearch]",
+        "Semantic search across the Group's contracts via a multilingual embedding model exposed through Elasticsearch, for fast retrieval across heterogeneous legal documents. [Python, Kubernetes, Word Embeddings, Elasticsearch]",
       footerLink: []
     },
     {
